@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <h2>Description</h2>
+        <hr />
+        <h4>First : main.hbs</h4>
+        <p>
+            The <strong>main.hbs</strong> file have as a role to embody all '.hbs' views as it's 
+            the defaultLayout. It's a way to refactor the code. That way, we're having the same
+            navbar for all the pages of the website, knowing that we coded it only one time.
+            What comes in '.hbs' views files is only the body. We can conclude that the code in 
+            <strong>main.hbs</strong> is to set the common code shared by all views (description, employees in our case).
+        </p>
+
+        <h4>Second : Input elements in addEmployee.html</h4>
+        <p>
+            The class <strong>form-control</strong> is for the bootstrap styling.<br>
+            The name attribute is for naming each employee's data, in order to add it in the employees list.
+            The type attribute helps the user fill the input with the right keys. (numbers if the type is number, *@*.* if the type is email) for example.
+            Each input element has a label element which lets the user know what he is going to fill in that input.
+            The label and the input elements are enrolled inside a div which has <strong>form-group</strong> class for bootstrap styling.
+
+        </p>
+        <h4>Third : checkLastName() function</h4>
+        <p>
+            The function <strong>checkLastName()</strong> checks if the user 
+            enters a non alphabetical character in the lastName input. If so, and after submitting the form,
+            The function alerts a message to let the user know that last name can not have non alphabetical character, 
+            and he should change it. Then it focuses on the last name input. 
+            In this case, the return of the function is false, which prevent the form from 
+            submitting. That way, the employee will never be added unless his last name has only alphabetical characters (the function returns
+            true in that case).
+
+        </p>
+    </div>
+</div>
